@@ -1,0 +1,75 @@
+.treatment-block{
+    display: block;
+}
+.treatment-card{
+    margin: 0 auto;
+    background-color: #FAFB8D;
+    height: auto;
+    width: 98%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0;
+    transition: all 0.25s;
+}
+.treatment-card-image{
+    margin: 20px;
+    width: 100vw;
+    max-width: 300px;
+    height: 75vw;
+    max-height: 250px;
+    background-color: gainsboro;
+}
+.treatment-card-text-upper{
+    margin: 10px;
+    height: auto;
+    text-align: center;
+    transition: all 1s;
+}
+.treatment-card-text-lower{
+    height: 0;
+    position: relative;
+    margin: 0;
+    bottom: 100%;
+    transition: all 1s;
+    opacity: 0;
+}
+@media screen and (width > 1000px){
+    .treatment-card{
+        justify-content:flex-start;
+        flex-wrap: nowrap;
+        max-width: 60%;
+    }
+    .treatment-card-text-upper{
+        width: 80%;
+        max-width: 100%;
+    }
+    .treatment-card-text-lower{
+        bottom: 80%;
+    }
+}
+@media screen and (width >= 1012px){
+    .treatment-card-text-lower{
+        bottom: 70%;
+    }
+}
+@media screen and (width >= 1090px){
+    .treatment-card-text-lower{
+        bottom: 60%;
+    }
+}
+@media screen and (width >= 1200px){
+    .treatment-card-text-lower{
+        bottom: 7.5rem;
+    }
+}
+.treatment-card:hover{
+    transform: scale(1.05, 1.05);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    .treatment-card-text-upper h1, p{
+        opacity: 0;
+    }
+    .treatment-card-text-lower{
+        opacity: 1;
+    }
+}
