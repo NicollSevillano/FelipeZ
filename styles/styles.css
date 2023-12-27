@@ -167,9 +167,22 @@ aside {
   }
 }
 
+
 @media (max-width: 512px) {
   aside .content .cuadro-contacto {
     flex-direction: column; 
+    margin: auto;
+    width: 300px;
+    
+  }
+
+  aside .content .cuadro-contacto .titulo-contacto {
+    font-size: 15px; 
+    text-align: center; 
+  }
+
+  aside .content .cuadro-contacto .formulario-contacto {
+    font-size: 14px; 
   }
 
   aside .content .cuadro-contacto .formulario-contacto form {
@@ -177,14 +190,50 @@ aside {
     flex-direction: column; 
   }
 
+  aside .content .cuadro-contacto .formulario-contacto form p {
+    margin: 0;
+    padding: 0.5em; 
+    font-size: 14px; 
+  }
+
   aside .content .cuadro-contacto .formulario-contacto form button,
   aside .content .cuadro-contacto .formulario-contacto form input,
   aside .content .cuadro-contacto .formulario-contacto form textarea {
     width: 100%; 
     margin-bottom: 1em; 
+    font-size: 14px; 
+    border: none; 
+    outline: none; 
   }
 }
 
+@media (max-width: 435px) {
+  aside .content .cuadro-contacto {
+    margin: 0 0 0 auto; 
+    width: 250px; 
+    margin-left: auto;
+    
+  }
+
+  aside .content .cuadro-contacto .titulo-contacto {
+    font-size: 1.2em; 
+  }
+
+  aside .content .cuadro-contacto .formulario-contacto {
+    font-size: 12px; 
+  }
+
+  aside .content .cuadro-contacto .formulario-contacto form p {
+    margin: 0.3em 0; 
+    font-size: 12px; 
+  }
+
+  aside .content .cuadro-contacto .formulario-contacto form button,
+  aside .content .cuadro-contacto .formulario-contacto form input,
+  aside .content .cuadro-contacto .formulario-contacto form textarea {
+    font-size: 12px; 
+  }
+}
 
 
 .treatment-block{
