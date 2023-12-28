@@ -7,18 +7,20 @@
 }
 body{
   overflow-x: hidden;
+}
+.body{
   background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
   background-color: #ffffff;
 }
 .img-size{
-  height: 11rem ;
-  width: 11rem;
+  height: 18rem ;
+  width: 18rem;
 }
 header{
   border-bottom: #8B5E54 solid 1px;
 }
 .navbar-nav{
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 600;
   gap: 1rem;
   .nav-link{
@@ -28,6 +30,9 @@ header{
       color: #4e3636;
   }
 }
+.navbar{
+  margin: 0;
+}
 .nav-link:hover{
 background-color: #967F71;
 }
@@ -35,26 +40,77 @@ background-color: #967F71;
 display: flex;
 flex-direction: column;
 row-gap: 5rem;
-/* padding: 5rem; */
 }
 .section{
 display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
+padding-top: 5%;
 /*.h1-section{
   font-weight: 600;
   font-size: 4rem;
 }*/
 .img-section{
   height: 20rem;
-  width: 35rem;
+  width: 32rem;
 }
 }
 .arrow-section{
 display: flex;
 justify-content: center;
 align-items: center;
+}
+/*carrusel*/
+.logos{
+  overflow: hidden;
+  white-space: nowrap; align-items: center;
+  position: relative; margin-bottom: 2rem;
+  padding-bottom: 2%;
+}
+.logos:before,
+.logos:after
+{
+position: absolute;
+top: 0;
+width: 250px;
+height: 100%;
+content: "";
+z-index: 2;
+}
+.logos-Slide{
+  display: inline-block;
+  animation: 30s slide infinite linear;
+}
+.logos-Slide img{
+  height: 100px;
+  width: 120px;
+  margin: 15px; object-fit: contain;
+}
+@keyframes slide {
+  from{
+      transform: translateX(0);
+  }
+  to{
+      transform: translateX(-100%);
+  }
+}
+.h2{
+  text-align: center;
+  text-decoration: underline;
+  padding-bottom: 4%;
+}
+@media (width < 602px) {
+  .section{
+    padding-top: 10%;
+    .img-section{
+      width: 18rem;
+      height: 12rem;
+    }
+  }
+  .arrow{
+    width: 5rem;
+  }
 }
 
 /* CONTACTO */
@@ -135,7 +191,6 @@ aside {
     padding: 2em; } 
 }
 
- 
 @media (max-width: 700px) {
   aside .content .cuadro-contacto {
     /* flex-direction: column;  */
@@ -152,7 +207,6 @@ aside {
   aside .content .cuadro-contacto .informacion-contacto {
     margin-bottom: 1.5em; 
   }
-
   aside .content .cuadro-contacto .formulario-contacto form {
     /* grid-template-columns: 1fr;  */
   }
@@ -244,8 +298,6 @@ aside {
     text-align: left;
   }
 }  
-
-
 .treatment-block{
   display: block;
 }
