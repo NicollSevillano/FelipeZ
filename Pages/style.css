@@ -1,9 +1,9 @@
-ul{
+.gallery-ul{
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
 }
-li{
+.gallery-li{
     max-height: 40vh;
     flex-grow: 1;
     border: 2px black solid;
@@ -11,34 +11,34 @@ li{
     justify-content: center;
     align-items: center;
 }
-img{
+.gallery-img{
     max-height: 100%;
     max-width: 100%;
     object-fit: cover;
     vertical-align: bottom;
 }
-li:last-child{
+.gallery-li:last-child{
     flex-grow: 10;
 }
 @media (max-aspect-ratio: 1/1){
-    li{
+    .gallery-li{
         height: 30vh;
     }
 }
 @media (max-height: 480px){
-    li{
+    .gallery-li{
         height: 80vh;
     }
 }
 @media (max-aspect-ratio: 1/1) and (max-width: 480px){
-    ul{
+    .gallery-ul{
         flex-direction: row;
     }
-    li{
+    .gallery-li{
         height: auto;
         width: 100%;
     }
-    img{
+    .gallery-img{
         width: 100%;
         max-height: 75vh;
         min-width: 0;
@@ -47,5 +47,4 @@ li:last-child{
 .gallery-photo-block{
     margin: auto;
     max-width: 100rem;
-    border: 1px black solid;
 }
