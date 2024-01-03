@@ -112,6 +112,20 @@ z-index: 2;
     width: 20rem;
   }
 }
+@media only screen and (min-width: 390px)
+{ 
+  .size{
+    height: 8rem; 
+   width: 8rem;
+  }
+  .section{
+    padding-top: 25%;
+    #img-section{
+      width: 15rem;
+      height: 10rem;
+    }
+  }
+}
 @media (width < 450px) {
   .size{
    height: 8rem; 
