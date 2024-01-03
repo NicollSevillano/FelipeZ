@@ -118,6 +118,10 @@ header {
 }
 
 @media (width <= 602px) {
+  .body {
+    background-color: white;
+    color: black;
+  }
   .navLi a{
     padding-left: 5%;
   }
@@ -130,8 +134,8 @@ header {
   .section {
     padding-top: 15%;
     .imgSection{
-      max-width: 50%;
-      max-height: 13em;
+      max-width: 20%;
+      max-height: 10em;
     }
   }
 
@@ -154,13 +158,17 @@ header {
   .section {
     padding-top: 25%;
     .imgSection{
-      max-width: 50%;
-      max-height: 13em;
+      max-width: 20%;
+      max-height: 10em;
     }
   }
 }
 
 @media (width < 450px) {
+  .body {
+    background-color: white;
+    color: black;
+  }
   .size {
     height: 8rem;
     width: 8rem;
@@ -173,8 +181,8 @@ header {
   .section {
     padding-top: 25%;
     .imgSection{
-      max-width: 50%;
-      max-height: 13em;
+      max-width: 20%;
+      max-height: 10em;
     }
   }
 }
