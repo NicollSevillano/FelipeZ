@@ -48,8 +48,7 @@ align-items: center;
 flex-direction: column;
 padding-top: 5%;
 #img-section{
-  height: 20rem;
-  width: 32rem;
+  width: 50%;
 }
 }
 .arrow-section{
@@ -96,7 +95,7 @@ z-index: 2;
   text-decoration: underline;
   padding-bottom: 4%;
 }
-@media (width < 602px) {
+@media (width <= 602px) {
   .size{
    height: 15rem; 
    width: 15rem;
@@ -104,15 +103,14 @@ z-index: 2;
   .section{
     padding-top: 15%;
     #img-section{
-      width: 20rem;
-      height: 15rem;
+      width: 60%;
     }
   }
   #arrow{
     width: 20rem;
   }
 }
-@media (width < 450px) {
+@media (width <= 450px) {
   .size{
    height: 8rem; 
    width: 8rem;
@@ -123,8 +121,7 @@ z-index: 2;
   .section{
     padding-top: 25%;
     #img-section{
-      width: 15rem;
-      height: 10rem;
+      width: 80%;
     }
   }
 }
