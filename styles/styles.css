@@ -52,21 +52,17 @@ header {
 }
 
 .section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  
+  background-image: url('../img/FBZ.png');  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  margin-top: 25%;  
 }
-.section img{
-    max-width: 500px;
-    max-height: 15em;
-  }
 .arrow-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10% 10%;
+  margin: 5%;
 }
 
 /*carrusel*/
@@ -133,14 +129,11 @@ header {
 
   .section {
     padding-top: 15%;
-    .imgSection{
-      max-width: 20%;
-      max-height: 10em;
-    }
   }
 
   #arrow {
     max-width: 15rem;
+    padding-top: 5%;
   }
 }
 
@@ -157,10 +150,6 @@ header {
 
   .section {
     padding-top: 25%;
-    .imgSection{
-      max-width: 20%;
-      max-height: 10em;
-    }
   }
 }
 
@@ -176,14 +165,11 @@ header {
 
   #arrow {
     max-width: 15rem;
+    padding-top: 5%;
   }
 
   .section {
     padding-top: 25%;
-    .imgSection{
-      max-width: 20%;
-      max-height: 10em;
-    }
   }
 }
 
