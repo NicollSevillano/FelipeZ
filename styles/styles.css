@@ -62,6 +62,10 @@ header {
   justify-content: center;
   align-items: center;
   margin: 5%;
+  padding-bottom: 5%;
+  #arrow{
+    max-width: 20em;
+  }
 }
 
 /*carrusel*/
@@ -134,6 +138,10 @@ header {
     max-width: 15rem;
     padding-top: 5%;
   }
+  .list{
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media only screen and (min-width: 390px) {
@@ -152,6 +160,7 @@ header {
   }
   #arrow{
     max-width: 10rem;
+    padding-top: 5%;
   }
 }
 
