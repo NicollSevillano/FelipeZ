@@ -76,6 +76,7 @@ header {
   position: relative;
   margin-bottom: 2rem;
   padding-bottom: 10%;
+  row-gap: 10em;
 }
 
 .logos:before,
@@ -93,10 +94,10 @@ header {
   animation: 30s slide infinite linear;
 }
 
-.logos-Slide img {
+.logos-Slide img{
   height: 100px;
   width: 120px;
-  margin: 15px;
+  margin: 25px;
   object-fit: contain;
 }
 
