@@ -1,5 +1,5 @@
 .contenedor {
-    max-width: 800px;
+    max-width: 950px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -11,37 +11,36 @@
 .caja {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .Contenedor_imagen {
-    align-content: center;
     flex: 1;
-    margin-right: 20px;
-    margin-top: 60px;
+    max-width: 100%;
+    margin-bottom: 20px;
 }
 
 .Contenedor_imagen img {
     width: 100%;
     height: auto;
-    max-width: 100%;
+    display: block;
+    margin: 0 auto;
 }
 
 .Contenedor-Texto {
-    flex: 2;
+    flex: 1;
+    margin-right: 20px;
 }
 
 .Contenedor-Texto p {
     line-height: 1.5;
 }
 
-@media (max-width: 600px) {
-    .caja {
-        flex-direction: column;
-    }
-
-    .Contenedor_imagen {
+@media (max-width: 1000px) {
+    .Contenedor_imagen,
+    .Contenedor-Texto {
+        max-width: 100%;
         margin-right: 0;
-        margin-bottom: 20px;
     }
 }
 
