@@ -1,3 +1,50 @@
+.contenedor {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.TITULO-SOBRE-MI {
+    color: #333;
+}
+
+.caja {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Contenedor_imagen {
+    align-content: center;
+    flex: 1;
+    margin-right: 20px;
+    margin-top: 60px;
+}
+
+.Contenedor_imagen img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.Contenedor-Texto {
+    flex: 2;
+}
+
+.Contenedor-Texto p {
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+    .caja {
+        flex-direction: column;
+    }
+
+    .Contenedor_imagen {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
 .gallery-ul{
     display: flex;
     flex-wrap: wrap;
